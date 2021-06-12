@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header{
+  background-color: #1B1B1B;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 10vh;
+  margin-top: 4vh;
+}
+
+.body{
+  /* height: 86vh; */
+  padding: 5vw;
+  background-color: #242424;
+  background-size: cover;
+}
+
+.parentDiv{
+  padding: 1vw;
+  background-color: #1B1B1B;
+  min-height: 180px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardGrids{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7vw;
+}
+
+@media screen and (max-width : 768px){
+
+  .cardGrids{
+    /* width: 100% !important; */
+    display: block;
+  }
+
+  .parentDiv{
+    background-color: #1B1B1B;
+    margin-bottom: 2vh;
+    border-radius: 20px;
+  }
+  
+
+}
+
